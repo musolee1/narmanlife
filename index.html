@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="NarmanLife - Hayal gücünüzü serbest bırakın, oyuncaklarınızla eğlenin!" />
+    <meta name="keywords" content="oyuncak, eğlence, hayal gücü, çocuklar, NarmanLife, 3D hareketli ejderha, oyuncak ejderha" />
+    <title>NarmanLife | Oyuncaklar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background: linear-gradient(135deg, #f3f4f6, #e0f2fe);
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .hero-section {
+        color: black;
+        padding: 5rem 1rem;
+        text-align: center;
+      }
+
+      .hero-section h1 {
+        font-weight: bold;
+      }
+
+      .card {
+        background-color: #ffffffdd;
+        backdrop-filter: blur(3px);
+        border: none;
+        border-radius: 1rem;
+      }
+
+      .card img {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .marketplace-links img {
+        height: 80px; /* Logoların boyutu büyütüldü */
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+    <section class="hero-section">
+      <div class="container mt-5">
+        <h1 class="display-4">NarmanLife</h1>
+        <h4> <strong> Hayal gücünüzü serbest bırakın, oyuncaklarınızla eğlenin! </strong></h4>
+        <div class="marketplace-links mt-4">
+          <h5 class="mb-2">Ürünlerimizi satın almak için:</h5>
+          <a href="https://www.trendyol.com/magaza/narmanlife-m-1131852?sst=0" target="_blank" rel="noopener noreferrer">
+            <img class="circular-logo" src="./img/trendyol.jpeg" alt="Trendyol" />
+          </a>
+          <a href="https://www.hepsiburada.com/magaza/narmanlife" target="_blank" rel="noopener noreferrer">
+            <img class="circular-logo" src="./img/hepsiburada.jpg" alt="Hepsiburada" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container my-5">
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <img src="./img/img_20250707_101458.webp" class="card-img-top" alt="3D Hareketli Ejderha – Uzun Kuyruk" />
+            <div class="card-body">
+              <h5 class="card-title">3D Hareketli Ejderha – Uzun Kuyruk</h5>
+              <p class="card-text">Bu oyuncak, hayal gücünüzü harekete geçirir ve eğlenceli saatler sunar.</p>
+              <a href="urun-detay.html" class="btn btn-primary">Ürüne Git</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <img src="./img/img_20250708_190150.webp" class="card-img-top" alt="3D Hareketli Ejderha – Küçük Boynuz" />
+            <div class="card-body">
+              <h5 class="card-title">3D Hareketli Ejderha – Küçük Boynuz</h5>
+              <p class="card-text">Bu oyuncak, hayal gücünüzü harekete geçirir ve eğlenceli saatler sunar.</p>
+              <a href="3d-hareketli-ejderha-kucuk-boynuz.html" class="btn btn-primary">Ürüne Git</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <img src="./img/img_20250708_190150.webp" class="card-img-top" alt="3D Hareketli Ejderha – Küçük Boynuz" />
+            <div class="card-body">
+              <h5 class="card-title">3D Hareketli Ejderha – Küçük Boynuz</h5>
+              <p class="card-text">Bu oyuncak, hayal gücünüzü harekete geçirir ve eğlenceli saatler sunar.</p>
+              <a href="3d-hareketli-ejderha-kucuk-boynuz.html" class="btn btn-primary">Ürüne Git</a>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p class="mb-0">© 2025 NarmanLife. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
+
+          const currentPage = window.location.pathname.split("/").pop();
+          document.querySelectorAll(".nav-link").forEach((link) => {
+            if (link.getAttribute("href") === currentPage) {
+              link.classList.add("active-link");
+            }
+          });
+        });
+    </script>
+  </body>
+</html>

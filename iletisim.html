@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="NarmanLife iletişim sayfamızdan bize ulaşın. Oyuncaklarımız, hizmetlerimiz ve işbirliği için iletişim formu doldurun."
+    />
+    <meta
+      name="keywords"
+      content="NarmanLife, iletişim, bize ulaşın, oyuncak, müşteri hizmetleri, destek, işbirliği, form, harita, konum"
+    />
+    <title>NarmanLife | İletişim</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(
+          135deg,
+          #f3f4f6,
+          #dbeafe
+        ); /* modern pastel degrade */
+        background-attachment: fixed;
+      }
+
+      .content-wrapper {
+        flex: 1;
+        padding: 2rem 1rem;
+      }
+
+      .info-card {
+        background-color: #ffffffdd;
+        backdrop-filter: blur(3px);
+        border: none;
+        border-radius: 1rem;
+        padding: 2rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      }
+
+      .info-card h2,
+      .info-card h3 {
+        color: #333;
+        margin-bottom: 1.5rem;
+      }
+
+      .info-card p {
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+
+      .contact-info {
+        list-style: none;
+        padding: 0;
+      }
+
+      .contact-info li {
+        margin-bottom: 0.8rem;
+        color: #555;
+      }
+
+      .contact-info i {
+        margin-right: 10px;
+        color: #007bff; /* Bootstrap primary color */
+      }
+
+      .map-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        margin-top: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      }
+
+      .map-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border: none;
+      }
+
+      /* MailJS form specific styles */
+      #contact-form .form-control {
+        margin-bottom: 1rem;
+      }
+
+      #contact-form button {
+        width: 100%;
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+
+    <div
+      class="content-wrapper d-flex align-items-center justify-content-center"
+    >
+      <div class="container my-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="info-card">
+              <h2 class="text-center mb-4">NarmanLife'a Hoş Geldiniz!</h2>
+
+              <p>
+                NarmanLife olarak, çocukların dünyasına hayal gücü ve eğlence
+                katmayı misyon edindik. Ürünlerimizle, miniklerin
+                yaratıcılıklarını keşfetmelerini, problem çözme becerilerini
+                geliştirmelerini ve oyun yoluyla öğrenmelerini teşvik ediyoruz.
+                Her bir oyuncağımız, en yüksek kalite standartlarında, çocuk
+                sağlığına uygun malzemelerden üretilmektedir. Güvenli, dayanıklı
+                ve ilham verici oyuncaklarımızla, geleceğin kaşiflerini ve
+                mucitlerini desteklemekten gurur duyuyoruz. NarmanLife, sadece
+                bir oyuncak markası değil, aynı zamanda ailelerin çocuklarıyla
+                birlikte kaliteli zaman geçirmeleri için bir köprüdür.
+              </p>
+              <p>
+                Oyuncaklarımız, 3D hareketli ejderhalar gibi yenilikçi
+                tasarımlarıyla çocukların dikkatini çekerken, onlara eşsiz bir
+                oyun deneyimi sunar. Bu interaktif oyuncaklar sayesinde
+                çocuklar, kendi hikayelerini yaratabilir, farklı karakterleri
+                canlandırabilir ve sosyal becerilerini pekiştirebilirler.
+                NarmanLife olarak, her yaş grubundan çocuğa hitap eden geniş
+                ürün yelpazemizle, herkesin içindeki çocuğu ortaya çıkarmayı
+                hedefliyoruz. Eğlence ve öğrenmeyi bir araya getiren
+                ürünlerimizle, çocukların gelişimine katkıda bulunmak en büyük
+                amacımızdır.
+              </p>
+              <p>
+                Müşteri memnuniyeti bizim için her zaman önceliklidir.
+                Ürünlerimiz hakkında detaylı bilgi almak, öneri veya
+                şikayetlerinizi iletmek ya da işbirliği olanaklarını görüşmek
+                isterseniz, iletişim kanallarımız aracılığıyla bize kolayca
+                ulaşabilirsiniz. NarmanLife ailesi olarak, sizlerle bağ
+                kurmaktan ve değerli geri bildirimlerinizi almaktan mutluluk
+                duyarız. Hayal gücünüzü serbest bırakın ve NarmanLife ile
+                eğlenceye adım atın!
+              </p>
+
+              <hr class="my-4" />
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <h3 class="text-center">Adresimiz</h3>
+                  <div class="map-container">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.828551139457!2d28.69466907650742!3d41.00689917135899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b54e3d6f1a8b9f%3A0x6a2c3e1e6f5c8a7c!2sEsenyurt%20Meydan%C4%B1!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                  <h3 class="text-center mb-4">Bizimle İletişime Geçin</h3>
+                  <p class="text-center">
+                    Aşağıdaki formu doldurarak bize doğrudan mesaj
+                    gönderebilirsiniz:
+                  </p>
+
+                  <form id="contact-form">
+                    <div class="mb-3">
+                      <label for="name" class="form-label"
+                        >Adınız Soyadınız</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="from_name"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label"
+                        >E-posta Adresiniz</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="from_email"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="message" class="form-label">Mesajınız</label>
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required
+                      ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                      Gönder
+                    </button>
+                  </form>
+                  <div id="form-message" class="mt-3 text-center"></div>
+                </div>
+              </div>
+
+              <hr class="my-4" />
+
+              <div class="mt-4 text-center">
+                <h4>Alternatif İletişim Kanalları</h4>
+                <ul class="contact-info">
+                  <li>
+                    <i class="fas fa-envelope"></i> Email: info@narmanlife.com
+                  </li>
+                  <li>
+                    <i class="fas fa-phone-alt"></i> Telefon: +90 5XX XXX XX XX
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i> Adres: Örnek Mah.
+                    Örnek Cad. No: 123, Örnek Şehir, Türkiye
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p class="mb-0">© 2025 NarmanLife. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      // MailJS'i başlatın (kendi kullanıcı kimliğinizi buraya girmeniz gerekiyor)
+      (function () {
+        emailjs.init("YOUR_USER_ID"); // Lütfen kendi MailJS Public Key'inizi buraya girin
+      })();
+
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault(); // Formun varsayılan gönderimini engelle
+
+            const formMessage = document.getElementById("form-message");
+            formMessage.innerHTML = "Mesajınız gönderiliyor...";
+            formMessage.style.color = "blue";
+
+            // Bu değerleri MailJS hesabınızdan alın (Service ID ve Template ID)
+            const serviceID = "YOUR_SERVICE_ID"; // Kendi Service ID'nizi buraya girin
+            const templateID = "YOUR_TEMPLATE_ID"; // Kendi Template ID'nizi buraya girin
+
+            emailjs.sendForm(serviceID, templateID, this).then(
+              () => {
+                formMessage.innerHTML = "Mesajınız başarıyla gönderildi!";
+                formMessage.style.color = "green";
+                document.getElementById("contact-form").reset(); // Formu temizle
+              },
+              (err) => {
+                formMessage.innerHTML =
+                  "Mesajınız gönderilirken bir hata oluştu: " +
+                  JSON.stringify(err);
+                formMessage.style.color = "red";
+              }
+            );
+          });
+      };
+    </script>
+    <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
+
+          const currentPage = window.location.pathname.split("/").pop();
+          document.querySelectorAll(".nav-link").forEach((link) => {
+            if (
+              link.getAttribute("href") === currentPage ||
+              (link.getAttribute("href") === "hakkimizda.html" &&
+                currentPage === "iletisim.html")
+            ) {
+              link.classList.add("active-link");
+            }
+          });
+        });
+    </script>
+  </body>
+</html>
